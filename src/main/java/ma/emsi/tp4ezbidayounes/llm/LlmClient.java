@@ -48,15 +48,6 @@ public class LlmClient implements Serializable {
         String chat(String prompt);
     }
 
-    private static void configureLogger() {
-        // Configure le logger sous-jacent (java.util.logging)
-        Logger packageLogger = Logger.getLogger("dev.langchain4j");
-        packageLogger.setLevel(Level.FINE); // Ajuster niveau
-        // Ajouter un handler pour la console pour faire afficher les logs
-        ConsoleHandler handler = new ConsoleHandler();
-        handler.setLevel(Level.FINE);
-        packageLogger.addHandler(handler);
-    }
 
     private String systemRole;
     private Assistant assistant;
@@ -73,13 +64,11 @@ public class LlmClient implements Serializable {
     private RetrievalAugmentor augmentor;
 
     public LlmClient() {
-        configureLogger();
 
         ChatLanguageModel modele = GoogleAiGeminiChatModel.builder()
                 .apiKey(System.getenv("GEMINI_KEY"))
                 .modelName("gemini-1.5-flash")
                 .temperature(0.7)
-                .logRequestsAndResponses(true)
                 .build();
 
 
@@ -190,15 +179,13 @@ public class LlmClient implements Serializable {
     }
 
     public void setSystemRole(String systemRole) {
-        if(!this.systemRole.equals(systemRole)) {
-            this.systemRole = systemRole;
-            this.chatMemory.clear();
-            this.chatMemory.add(new SystemMessage(this.systemRole));
-        }
+        this.systemRole = systemRole;
+        this.chatMemory.clear();
+        this.chatMemory.add(new SystemMessage(this.systemRole));
     }
 
     public String envoyerMessage(String question) {
 
-        return this.assistant.chat(question);
+        return this.assistant.chat(question + ", Repondez en Français");
     }
 }

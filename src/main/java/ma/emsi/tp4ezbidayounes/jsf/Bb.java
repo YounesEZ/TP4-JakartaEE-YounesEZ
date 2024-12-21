@@ -86,29 +86,6 @@ public class Bb implements Serializable {
         return reponse;
     }
 
-//    public String getTexteReponseJson() {
-//        return texteReponseJson;
-//    }
-//
-//    public void setTexteReponseJson(String texteReponseJson) {
-//        this.texteReponseJson = texteReponseJson;
-//    }
-//
-//    public String getTexteRequeteJson() {
-//        return texteRequeteJson;
-//    }
-//
-//    public void setTexteRequeteJson(String texteRequeteJson) {
-//        this.texteRequeteJson = texteRequeteJson;
-//    }
-
-//    public boolean isDebug() {
-//        return debug;
-//    }
-//    public void setDebug(boolean debug) {
-//        this.debug = debug;
-//    }
-
     /**
      * setter indispensable pour le textarea.
      *
@@ -126,9 +103,7 @@ public class Bb implements Serializable {
         this.conversation = new StringBuilder(conversation);
     }
 
-//    public void toggleDebug() {
-//        this.setDebug(!isDebug());
-//    }
+
     /**
      * Envoie la question au serveur.
      * En attendant de l'envoyer à un LLM, le serveur fait un traitement quelconque, juste pour tester :
