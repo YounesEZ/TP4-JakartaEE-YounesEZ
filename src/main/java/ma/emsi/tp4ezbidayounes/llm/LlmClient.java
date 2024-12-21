@@ -140,6 +140,51 @@ public class LlmClient implements Serializable {
                 .minScore(0.5)
                 .build();
 
+        class QueryRouterPersonalise implements QueryRouter {
+
+            @Override
+            public Collection<ContentRetriever> route(Query query) {
+                String question = "Est-ce que la requête '" + query.text()
+                        + "' porte sur l'IA ? "
+                        + "Réponds seulement par 'oui', 'non', ou 'peut-être'.";
+                String reponse = modele.generate(question);
+                if (reponse.toLowerCase().contains("non")) {
+                    // Pas de RAG
+                    return Collections.emptyList();
+                } else {
+                    question = "Est_ce que la requête '" + query.text()
+                            + "' porte sur le fine-tuning ou le RAG ? "
+                            + "Réponds seulement par 'oui', 'non', ou 'peut-être'.";
+                    reponse = modele.generate(question);
+                    if(reponse.toLowerCase().contains("non")) {
+                        return List.of(retrieverML);
+                    }
+                    else {
+                        return List.of(retrieverRag);
+                    }
+                }
+            }
+        }
+
+
+        this.router = new QueryRouterPersonalise();
+
+        QueryTransformer transformer = CompressingQueryTransformer.builder()
+                .chatLanguageModel(modele)
+                .build();
+
+        this.augmentor = DefaultRetrievalAugmentor.builder()
+                .queryTransformer(transformer)
+                .queryRouter(router)
+                .build();
+
+        this.chatMemory = MessageWindowChatMemory.withMaxMessages(10);
+
+        this.assistant = AiServices.builder(Assistant.class)
+                .chatLanguageModel(modele)
+                .chatMemory(chatMemory)
+                .retrievalAugmentor(augmentor)
+                .build();
 
 
     }

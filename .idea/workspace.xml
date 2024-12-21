@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18f6be3c-078c-4297-a878-a4f753d868fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/tp4ezbidayounes/jsf/Bb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/tp4ezbidayounes/llm/LlmClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ml.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rag.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/mycsslayout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/emsi/tp4ezbidayounes/llm/LlmClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/tp4ezbidayounes/llm/LlmClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1734807559825</updated>
-      <workItem from="1734807560881" duration="2352000" />
+      <workItem from="1734807560881" duration="2482000" />
     </task>
     <servers />
   </component>
