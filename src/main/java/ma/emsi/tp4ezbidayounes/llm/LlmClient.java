@@ -126,6 +126,20 @@ public class LlmClient implements Serializable {
         ingestorML.ingest(document1);
         ingestorRag.ingest(document2);
 
+        this.retrieverML = EmbeddingStoreContentRetriever.builder()
+                .embeddingModel(embeddingModel)
+                .embeddingStore(embeddingStoreML)
+                .maxResults(2)
+                .minScore(0.5)
+                .build();
+
+        this.retrieverRag = EmbeddingStoreContentRetriever.builder()
+                .embeddingModel(embeddingModel)
+                .embeddingStore(embeddingStoreRag)
+                .maxResults(2)
+                .minScore(0.5)
+                .build();
+
 
 
     }
