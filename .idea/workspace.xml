@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18f6be3c-078c-4297-a878-a4f753d868fa" name="Changes" comment="" />
+    <list default="true" id="18f6be3c-078c-4297-a878-a4f753d868fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/tp4ezbidayounes/jsf/Bb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/tp4ezbidayounes/llm/LlmClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ml.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rag.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/mycsslayout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "YounesEZ"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/YounesEZ/TP4-JakartaEE-YounesEZ.git",
+    "accountId": "e78a8b7c-f347-4f75-83ae-3383f22ac70d"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -34,10 +56,22 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Younes/IdeaProjects/TP4-Ezbida-Younes/src/main/java/ma/emsi/tp4ezbidayounes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Younes\IdeaProjects\TP4-Ezbida-Younes\src\main\java\ma\emsi\tp4ezbidayounes" />
+      <recent name="C:\Users\Younes\IdeaProjects\TP4-Ezbida-Younes\src\main\webapp" />
+      <recent name="C:\Users\Younes\IdeaProjects\TP4-Ezbida-Younes\src\main\resources" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Payara 6.20.0" type="PayaraServerConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Payara 6.20.0" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
@@ -81,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1734807559825</updated>
-      <workItem from="1734807560881" duration="6000" />
+      <workItem from="1734807560881" duration="2352000" />
     </task>
     <servers />
   </component>
